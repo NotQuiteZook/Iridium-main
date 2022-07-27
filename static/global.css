@@ -3,9 +3,11 @@
 *:focus {
   outline: none;
 }
+
 body {
   background-color: var(--background-primary);
 }
+
 h1 {
   font-family: "Open Sans", sans-serif;
   display: inline;
@@ -13,6 +15,7 @@ h1 {
   -webkit-background-clip: text;
   color: transparent;
 }
+
 #content {
   position: absolute;
   top: 50%;
@@ -20,6 +23,7 @@ h1 {
   transform: translate(-50%, -50%);
   font-size: 3vw;
 }
+
 #input {
   border-radius: 20em;
   font-size: 1vw;
@@ -35,18 +39,23 @@ h1 {
   color: var(--input-text-color) !important;
   transition: width 1s;
 }
+
 #input:focus {
   width: 70vw;
 }
+
 #input::placeholder {
   color: var(--input-placeholder-color) !important;
 }
+
 #input:focus::placeholder {
   color: transparent !important;
 }
+
 #button {
   display: none;
 }
+
 #header {
   position: absolute;
   top: 0;
@@ -56,7 +65,12 @@ h1 {
   background-color: var(--header-color);
   text-align: center;
 }
-#header a, a:link, a:visited, a:hover, a:active {
+
+#header a,
+a:link,
+a:visited,
+a:hover,
+a:active {
   height: var(--header-height);
   color: var(--header-text-color);
   font-family: "Open Sans", sans-serif;
@@ -69,21 +83,53 @@ h1 {
   transform: translateY(-100%);
   padding: .5em;
 }
-#header a:hover, a:active {
+
+#header a:hover,
+a:active {
   background-color: var(--header-color);
 }
+
 #button {
   height: 30px;
-  padding-left:50px;
+  padding-left: 50px;
   padding-right: 50px;
 }
+
 #form {
   display: flex;
   justify-content: center;
 }
 
+#theme-chooser-wrapper {
+  border-radius: 4px;
+  background-color: var(--theme-wrapper-color);
+}
+
 #theme-chooser {
+  background-color: transparent;
   position: absolute;
-  bottom: 0;
-  right: 0;
+  bottom: 7%;
+  right: 4%;
+}
+
+#theme-chooser-sel {
+  background-color: var(--theme-wrapper-color);
+  color: var(--theme-sel-color);
+  border-radius: 24px;
+  font-size: 14px;
+  width: 12em;
+  height: 3em;
+  text-align: center;
+}
+
+#big_title {
+  position: absolute;
+  z-index: 999;
+  top: 0;
+  left: 1%;
+  margin: 0;
+
+  color: white;
+  font-size: 40px;
+  font-family: "Open Sans", sans-serif;
 }

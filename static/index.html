@@ -1,28 +1,30 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Iridium</title>
-    <meta charset="utf-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta
-        name = "description"
-        content = ""
-        />
-    <meta property="og:title" content="Iridium" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="" />
-    <meta property="og:description" content="Iridium" />
-    <style>
-    </style>
-    <script src="theme_loader.js"></script>
-    <link rel="stylesheet" href="global.css">
-  </head>
-  <body onload="onLoad()">
-    <center id="content"><h1>Iridium</h1>
-      <form>
-        <input type=text name=url placeholder="Search the web!" id="input">
-      </form>
-    </center>
+
+<head>
+  <title>Iridium</title>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="description" content="" />
+  <meta property="og:title" content="Iridium" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="" />
+  <meta property="og:description" content="Iridium" />
+  <style>
+  </style>
+  <script src="theme_loader.js"></script>
+  <link rel="stylesheet" href="global.css">
+</head>
+
+<body onload="">
+
+  <center id="content">
+    <h1>Iridium</h1>
+    <form>
+      <input type=text name=url placeholder="Search the web!" id="input">
+    </form>
+  </center>
+  <div id="theme-chooser-wrapper">
     <form id="theme-chooser">
       <select id="theme-chooser-sel">
         <option value="default">Select a theme</option>
@@ -31,28 +33,29 @@
         <option value="rosepine">Rose Pine</option>
       </select>
     </form>
-    <script src="uv/uv.bundle.js"></script>
-    <script src="uv/uv.config.js"></script>
-    <script src="index.js"></script>
-    <script>
-      function rammerheadLink() {
-              let url = 'https://r.' + location.href.slice(8)
-              window.location.href = url
-            }
-      function supportServer(){
-              let url = location.href.slice(8) + 'service/hvtrs8%2F-dksaopd%2Ccmm-cjalnglq%2F%3B57575%3B1282817%3B3%3B2-97575%3B4295702%3A1%3B2%3A'
-            }
-    </script>
-    <div id="header">
-      <span id="header-links">
-        <!--         Use relative URLS (starting with "/") to improve page speed, code readability, and browser support -->
-        <!--         Rewriting this rammerhead link part is highly recommended, but it would require changing some hosting settings (I think) -->
-        <a href="javascript: rammerheadLink()">Rammerhead</a>
-        <!--         <a href="https://google.com">Support server</a>  -->
-        <a href="javascript: supportServer()">Support Server</a>
-        <a href="/other/contributors.html">Contributors</a>
-        <a href="iVM/index.html">IridiumVM</a>
-      </span>
-    </div>
-  </body>
+  </div>
+  <script src="uv/uv.bundle.js"></script>
+  <script src="uv/uv.config.js"></script>
+  <script src="index.js"></script>
+  <script>
+    function rammerheadLink() {
+      let url = 'https://r.' + location.href.slice(8)
+      window.location.href = url
+    }
+    function supportServer() {
+      let url = location.href.slice(8) + 'https://discord.gg/bZQxg6SkVp'
+    }
+  </script>
+  <div id="header">
+    <p id="big_title">Iridium</p>
+    <span id="header-links">
+      <!--         Use relative URLS (starting with "/") to improve page speed, code readability, and browser support -->
+      <!--         Rewriting this rammerhead link part is highly recommended, but it would require changing some hosting settings (I think) -->
+      <!--         <a href="https://google.com">Support server</a>  -->
+      <a href="javascript: supportServer()">Support Server</a>
+      <a href="iVM/index.html">IridiumVM</a>
+    </span>
+  </div>
+</body>
+
 </html>

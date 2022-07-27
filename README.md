@@ -25,4 +25,4 @@
     You should have received a copy of the GNU Affero General Public License
     along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-A full version of the terms of services included in the GNU AGPL license can be found in the file named COPYING.
+A full version of the terms of services included in the GNU AGPL license can be found in the file named LICENSE.

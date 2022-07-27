@@ -10,4 +10,6 @@
   --input-background-color: #44475a;
   --input-border-color: #bd93f9;
   --input-border-size: 0.1em;
+  --theme-wrapper-color: #44475a;
+  --theme-sel-color: white;
 }
